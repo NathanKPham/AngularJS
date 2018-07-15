@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en-us" ng-app="angularApp">
+<html lang="en-us" ng-app="myApp">
     <head>
-        <title>Introduction to AngularJS</title>
+        <title>Learn and Understand AngularJS</title>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta charset="UTF-8">
 
         <!-- load bootstrap and fontawesome via CDN -->
-        <!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" /-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
         <style>
-            html, body
+            html, body, input, select, textarea
             {
-                font-size: 1.1em;
+                font-size: 1.05em;
             }
         </style>
         
         <!-- load angular via CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
-        <script src="https://code.angularjs.org/1.7.2/angular-messages.min.js"></script>
+        <script src="//code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
         <script src="app.js"></script>
     </head>
     <body>
@@ -38,17 +36,14 @@
 
         <div class="container">
 
-			<div ng-controller="mainController">
-                
-                <label>What is your twitter handle?</label>
+            <div ng-controller="mainController">
+            
+                <label>What's your twitter handle?</label>
                 <input type="text" ng-model="handle" />
                 
             </div>
-            
             <hr />
-            
             <h1>twitter.com/{{ handle }}</h1>
-
 		</div>
 
     </body>
