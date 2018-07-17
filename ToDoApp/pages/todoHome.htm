@@ -1,0 +1,18 @@
+<h1>Things to do: </h1>
+<a href="#/todo" type="button"  class="btn btn-primary btn-sm">
+    Add things to list 
+ </a>
+<ul class="list-group">
+    <button ng-repeat="x in list" ng-click="removeListing(x)" type="button" class="list-group-item list-group-item-action">
+        I need to {{ x }}
+    </button>
+</ul>
+<hr/>
+<h1>Finished:</h1>
+<ul class="list-group list-group-flush">
+        <li ng-repeat="x in finishedList" class="list-group-item">
+            
+            {{ x }}<button ng-click="removeFinishedItem(x)" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            
+        </li> 
+      </ul>
