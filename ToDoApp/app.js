@@ -16,6 +16,10 @@ todoApp.config(function($routeProvider){
         templateUrl: 'pages/todo.htm',
         controller: 'todoController'
     })
+    .when("/practice",{
+        templateUrl: 'pages/practice.htm',
+        controller: 'practiceController'
+    })
 
 });
 
@@ -60,6 +64,10 @@ todoApp.controller("todoHomeController", ["$scope", "todoService", function($sco
     }
 
 }]);
+todoApp.controller('practiceController', function(){
+
+
+});
 
 todoApp.service("todoService", function(){
     let serviceList = this.list = [];
